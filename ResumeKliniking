@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RésuméKlinik — Nigeria's Premier Career Clinic</title>
+<meta name="description" content="Premium CV writing, LinkedIn optimisation, and career strategy for ambitious African professionals. ATS-optimised. Expert-reviewed. Results guaranteed.">
+<meta property="og:title" content="RésuméKlinik — Empowering Careers, Connecting Opportunities">
+<meta property="og:description" content="Nigeria's most trusted career clinic. 500+ CVs transformed. Big 4 placements secured.">
+<meta property="og:url" content="https://resumeklinik.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ─── TOKENS ──────────────────────────────────────────────── */
+:root{
+  --lime:#8DC63F; --lime2:#A8D84E; --lime3:#C5E87A; --limedark:#6BA528;
+  --navy:#1C2E4A; --navy2:#243856; --navy3:#0D1825;
+  --cream:#F5F8EF; --cream2:#EAF0DC; --off:#FAFAF7;
+  --text:#0D1825; --muted:#5A6E7F; --faint:#9EB3C4;
+  --bd:rgba(28,46,74,0.09); --bdhov:rgba(141,198,63,0.35);
+  --r:14px; --rs:9px;
+  --shadow: 0 4px 28px rgba(28,46,74,0.09);
+  --shadowlg: 0 16px 56px rgba(28,46,74,0.14);
+}
+
+/* ─── RESET ───────────────────────────────────────────────── */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}
+body{font-family:'Cabinet Grotesk',sans-serif;background:var(--off);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;cursor:none}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--lime);border-radius:2px}
+
+/* ─── CUSTOM CURSOR ───────────────────────────────────────── */
+.cursor{position:fixed;pointer-events:none;z-index:9999;mix-blend-mode:multiply}
+.cursor-dot{width:8px;height:8px;background:var(--lime);border-radius:50%;transform:translate(-50%,-50%);transition:transform .1s}
+.cursor-ring{width:36px;height:36px;border:1.5px solid var(--navy);border-radius:50%;transform:translate(-50%,-50%);transition:all .15s ease;opacity:.5}
+.cursor-ring.hov{width:56px;height:56px;border-color:var(--lime);opacity:.8;border-width:2px}
+
+/* ─── TYPOGRAPHY ──────────────────────────────────────────── */
+h1,h2,h3,.serif{font-family:'Fraunces',serif}
+.eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--limedark)}
+.eyebrow-w{color:var(--lime3)}
+
+/* ─── LAYOUT ──────────────────────────────────────────────── */
+.wrap{width:90%;max-width:1160px;margin:0 auto}
+section{padding:96px 0}
+
+/* ─── NAVIGATION ──────────────────────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .3s}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav.scrolled{background:rgba(13,24,37,0.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.04)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo img{height:40px;width:auto;border-radius:7px}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nl{color:rgba(255,255,255,0.55);font-size:13.5px;font-weight:500;padding:8px 14px;border-radius:8px;transition:all .2s;position:relative}
+.nl::after{content:'';position:absolute;bottom:4px;left:14px;right:14px;height:1.5px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nl:hover{color:rgba(255,255,255,.9)}.nl:hover::after{transform:scaleX(1)}
+.nav-ctas{display:flex;align-items:center;gap:8px}
+.n-wa{display:flex;align-items:center;gap:7px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.22);color:#25D366;padding:8px 16px;border-radius:22px;font-size:13px;font-weight:600;transition:all .2s}
+.n-wa:hover{background:rgba(37,211,102,0.2);transform:translateY(-1px)}
+.n-wa svg{width:14px;height:14px;fill:#25D366;flex-shrink:0}
+.n-cta{background:var(--lime);color:var(--navy);font-size:13px;font-weight:700;padding:9px 22px;border-radius:22px;transition:all .22s;letter-spacing:.01em}
+.n-cta:hover{background:var(--lime3);transform:translateY(-2px);box-shadow:0 6px 24px rgba(141,198,63,0.38)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+.ham span{width:22px;height:1.5px;background:rgba(255,255,255,0.7);border-radius:1px;transition:all .3s;display:block}
+.mob-nav{display:none;position:fixed;inset:0;background:rgba(13,24,37,0.99);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-nav.open{display:flex}
+.mob-close{position:absolute;top:20px;right:20px;background:none;border:none;color:rgba(255,255,255,.5);font-size:28px;cursor:pointer;font-family:'Cabinet Grotesk',sans-serif}
+.mob-link{font-family:'Fraunces',serif;font-size:clamp(32px,6vw,52px);font-weight:700;color:rgba(255,255,255,.7);transition:color .2s;padding:6px 0}
+.mob-link:hover{color:var(--lime2)}
+
+/* ─── HERO ────────────────────────────────────────────────── */
+.hero{min-height:100vh;background:var(--navy3);display:flex;align-items:center;padding-top:68px;position:relative;overflow:hidden}
+/* animated mesh background */
+.hero-mesh{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.mesh-blob{position:absolute;border-radius:50%;filter:blur(80px);animation:blobFloat 16s ease-in-out infinite}
+.mb1{width:900px;height:900px;background:radial-gradient(circle,rgba(141,198,63,.09) 0%,transparent 70%);top:-30%;right:-20%;animation-duration:18s}
+.mb2{width:600px;height:600px;background:radial-gradient(circle,rgba(28,46,74,.8) 0%,transparent 70%);bottom:-20%;left:-10%;animation-duration:14s;animation-direction:reverse}
+.mb3{width:400px;height:400px;background:radial-gradient(circle,rgba(141,198,63,.05) 0%,transparent 70%);top:40%;left:35%;animation-duration:22s}
+@keyframes blobFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-20px) scale(1.04)}66%{transform:translate(-20px,30px) scale(.96)}}
+/* dot grid */
+.hero-grid{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(141,198,63,.12) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+/* running ticker line */
+.hero-ticker-line{position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(141,198,63,.3),rgba(141,198,63,.6),rgba(141,198,63,.3),transparent)}
+
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 460px;gap:64px;align-items:center}
+
+/* left column */
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(141,198,63,.09);border:1px solid rgba(141,198,63,.2);border-radius:30px;padding:6px 16px;margin-bottom:24px;animation:tagSlide .8s ease forwards}
+@keyframes tagSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.hero-tag-dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 8px var(--lime);animation:tagPulse 2s ease-in-out infinite}
+@keyframes tagPulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-tag p{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lime3)}
+
+h1.hero-h{font-size:clamp(44px,5.5vw,76px);font-weight:900;color:#fff;line-height:1.04;letter-spacing:-2px;animation:heroTitleIn 1s .1s ease both}
+@keyframes heroTitleIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+h1.hero-h em{color:var(--lime);font-style:italic}
+h1.hero-h .line2{display:block;color:rgba(255,255,255,.35);font-style:italic;font-size:.85em}
+
+.hero-sub{font-size:17px;color:rgba(255,255,255,.46);line-height:1.78;max-width:480px;margin:22px 0 36px;font-weight:300;animation:heroSubIn 1s .25s ease both}
+@keyframes heroSubIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;animation:heroBtnsIn 1s .38s ease both}
+@keyframes heroBtnsIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:11px;font-size:15px;font-weight:600;cursor:pointer;border:none;font-family:'Cabinet Grotesk',sans-serif;transition:all .22s;letter-spacing:.01em}
+.btn-g{background:var(--lime);color:var(--navy)}.btn-g:hover{background:var(--lime3);transform:translateY(-3px);box-shadow:0 8px 32px rgba(141,198,63,.4)}
+.btn-o{background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.14)}.btn-o:hover{border-color:rgba(255,255,255,.38);color:#fff;transform:translateY(-2px)}
+.btn-wa{background:rgba(37,211,102,.1);color:#25D366;border:1px solid rgba(37,211,102,.24)}.btn-wa:hover{background:rgba(37,211,102,.18);transform:translateY(-2px)}
+.btn-wa svg{width:17px;height:17px;fill:#25D366}
+
+.hero-trust{display:flex;align-items:center;gap:22px;animation:heroTrustIn 1s .5s ease both}
+@keyframes heroTrustIn{from{opacity:0}to{opacity:1}}
+.trust-stat{text-align:center}
+.trust-n{font-family:'Fraunces',serif;font-size:28px;font-weight:700;color:var(--lime);line-height:1}
+.trust-l{font-size:11px;color:rgba(255,255,255,.3);margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
+.trust-div{width:1px;height:36px;background:rgba(255,255,255,.08)}
+
+/* right column – stacked cards */
+.hero-cards{position:relative;height:520px}
+.hc{position:absolute;background:rgba(255,255,255,.04);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:20px}
+
+.hc-main{width:320px;top:0;right:0;animation:cardFloat1 6s ease-in-out infinite}
+@keyframes cardFloat1{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hc-main-top{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.06)}
+.hc-logo{height:34px;width:auto;max-width:140px;border-radius:6px}
+.hc-label{font-size:12px;color:rgba(255,255,255,.35);font-style:italic}
+.hc-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.hc-row:last-child{border:none}
+.hc-dot{width:6px;height:6px;border-radius:50%;background:var(--lime);flex-shrink:0}
+.hc-txt{font-size:13px;color:rgba(255,255,255,.6);font-weight:400}
+.hc-tag{margin-left:auto;font-size:9.5px;font-weight:700;padding:2px 8px;border-radius:10px;background:rgba(141,198,63,.12);color:var(--lime);letter-spacing:.04em}
+.hc-foot{padding-top:14px;margin-top:4px}
+.hc-foot a{display:flex;align-items:center;justify-content:center;background:var(--lime);color:var(--navy);border-radius:8px;padding:11px;font-size:13.5px;font-weight:700;transition:all .2s;gap:6px}
+.hc-foot a:hover{background:var(--lime3)}
+
+/* floating mini-cards */
+.hc-score{width:200px;bottom:20px;left:0;padding:16px;animation:cardFloat2 7s 1s ease-in-out infinite}
+@keyframes cardFloat2{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+.hcs-label{font-size:11px;color:rgba(255,255,255,.38);margin-bottom:8px;font-weight:500}
+.hcs-num{font-family:'Fraunces',serif;font-size:38px;font-weight:900;color:var(--lime);line-height:1;margin-bottom:2px}
+.hcs-sub{font-size:11px;color:rgba(255,255,255,.28)}
+.hcs-bar{height:4px;background:rgba(255,255,255,.07);border-radius:2px;margin-top:10px;overflow:hidden}
+.hcs-fill{height:100%;width:78%;background:linear-gradient(90deg,var(--lime),var(--lime3));border-radius:2px;animation:fillGrow 1.2s 1s ease both}
+@keyframes fillGrow{from{width:0}to{width:78%}}
+
+.hc-ats{width:160px;top:180px;left:-20px;padding:14px;animation:cardFloat3 8s 2s ease-in-out infinite}
+@keyframes cardFloat3{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(0deg)}}
+.ats-check{width:28px;height:28px;background:rgba(141,198,63,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.ats-check svg{width:14px;height:14px;stroke:var(--lime);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.ats-t{font-size:12px;font-weight:700;color:#fff;margin-bottom:2px}
+.ats-s{font-size:10.5px;color:rgba(255,255,255,.35)}
+
+/* ─── MARQUEE / TICKER ────────────────────────────────────── */
+.ticker{background:var(--lime);padding:14px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;gap:0;animation:tickerScroll 24s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{display:inline-flex;align-items:center;gap:16px;padding:0 28px;font-size:13px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.08em}
+.ticker-sep{width:5px;height:5px;background:var(--navy);border-radius:50%;opacity:.3;flex-shrink:0}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ─── ABOUT ───────────────────────────────────────────────── */
+.about{background:var(--off);overflow:hidden}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-visual{position:relative}
+.about-img-wrap{position:relative;border-radius:20px;overflow:hidden}
+.about-img-wrap img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:20px;filter:saturate(1.1)}
+.about-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,24,37,.7) 0%,transparent 50%);border-radius:20px}
+.about-img-badge{position:absolute;bottom:24px;left:24px;right:24px;background:rgba(255,255,255,.12);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:16px 18px}
+.aib-name{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:2px}
+.aib-role{font-size:12px;color:rgba(255,255,255,.55)}
+.aib-li{display:inline-flex;align-items:center;gap:7px;background:rgba(10,102,194,.2);border:1px solid rgba(10,102,194,.3);color:#5B9FFF;padding:6px 13px;border-radius:20px;font-size:12px;font-weight:600;margin-top:10px;transition:all .2s}
+.aib-li:hover{background:rgba(10,102,194,.35);transform:translateY(-1px)}
+.about-floater{position:absolute;top:-20px;right:-20px;background:var(--lime);border-radius:14px;padding:16px 18px;box-shadow:0 8px 32px rgba(141,198,63,.35)}
+.af-n{font-family:'Fraunces',serif;font-size:28px;font-weight:900;color:var(--navy);line-height:1}
+.af-l{font-size:11px;font-weight:700;color:rgba(28,46,74,.55);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.about-text .eyebrow{margin-bottom:10px}
+.about-text h2{font-size:clamp(30px,3.5vw,46px);font-weight:700;line-height:1.1;letter-spacing:-.8px;margin-bottom:18px;color:var(--text)}
+.about-text h2 em{color:var(--limedark);font-style:italic}
+.about-text .lead{font-size:16px;color:var(--muted);line-height:1.85;font-weight:300;margin-bottom:16px}
+.blockquote{border-left:3px solid var(--lime);padding:14px 20px;background:var(--cream);border-radius:0 12px 12px 0;margin:22px 0;font-family:'Fraunces',serif;font-size:18px;font-style:italic;color:var(--navy2);line-height:1.6}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.as{background:var(--cream);border:1px solid var(--bd);border-radius:12px;padding:16px;text-align:center;transition:all .2s}
+.as:hover{border-color:var(--bdhov);background:var(--cream2);transform:translateY(-2px)}
+.as-n{font-family:'Fraunces',serif;font-size:28px;font-weight:900;color:var(--limedark);line-height:1}
+.as-l{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+
+/* ─── SERVICES ────────────────────────────────────────────── */
+.services{background:var(--navy3);overflow:hidden}
+.services-head{text-align:center;margin-bottom:60px}
+.services-head h2{font-size:clamp(30px,4vw,52px);font-weight:900;color:#fff;letter-spacing:-1px;line-height:1.08}
+.services-head h2 em{color:var(--lime);font-style:italic}
+.services-head p{font-size:16px;color:rgba(255,255,255,.42);max-width:500px;margin:14px auto 0;font-weight:300;line-height:1.78}
+.svcs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:28px;transition:all .28s;position:relative;overflow:hidden;cursor:default}
+.svc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(141,198,63,.04),transparent);opacity:0;transition:opacity .3s;border-radius:18px}
+.svc:hover{transform:translateY(-6px);border-color:rgba(141,198,63,.28);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.svc:hover::before{opacity:1}
+.svc.featured{background:rgba(141,198,63,.07);border-color:rgba(141,198,63,.22)}
+.svc-num{font-family:'Fraunces',serif;font-size:13px;font-weight:700;color:rgba(141,198,63,.4);letter-spacing:.06em;margin-bottom:16px}
+.svc-icon{width:48px;height:48px;background:linear-gradient(135deg,var(--lime),var(--limedark));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 4px 18px rgba(107,165,40,.3)}
+.svc-icon svg{stroke:#1c2e4a;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc-t{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.2}
+.svc-d{font-size:13.5px;color:rgba(255,255,255,.44);line-height:1.72;font-weight:300}
+.svc-cta{font-size:11.5px;font-weight:700;color:var(--lime3);text-transform:uppercase;letter-spacing:.08em;display:block;margin-top:18px}
+.svc.featured .svc-num{color:rgba(141,198,63,.7)}
+
+/* ─── PRICING ─────────────────────────────────────────────── */
+.pricing{background:var(--cream);overflow:hidden}
+.pricing-head{text-align:center;margin-bottom:56px}
+.pricing-head h2{font-size:clamp(28px,3.5vw,48px);font-weight:900;letter-spacing:-1px;color:var(--text)}
+.pricing-head h2 em{color:var(--limedark);font-style:italic}
+.pricing-head p{font-size:15px;color:var(--muted);max-width:460px;margin:12px auto 0;line-height:1.78;font-weight:300}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pc{border-radius:18px;padding:28px;transition:all .25s;position:relative;border:1.5px solid var(--bd)}
+.pc.std{background:var(--off)}
+.pc.std:hover{transform:translateY(-5px);border-color:var(--bdhov);box-shadow:var(--shadowlg)}
+.pc.pop{background:var(--navy3);border-color:rgba(141,198,63,.3)}
+.pc-crown{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--lime);color:var(--navy);font-size:10px;font-weight:800;padding:4px 14px;border-radius:20px;white-space:nowrap;letter-spacing:.05em}
+.pc-tier{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.pc.std .pc-tier{color:var(--faint)}.pc.pop .pc-tier{color:var(--lime)}
+.pc-name{font-family:'Fraunces',serif;font-size:20px;font-weight:700;margin-bottom:6px}
+.pc.std .pc-name{color:var(--text)}.pc.pop .pc-name{color:#fff}
+.pc-price{font-family:'Fraunces',serif;font-size:27px;font-weight:900;color:var(--limedark);line-height:1;margin-bottom:5px}
+.pc.pop .pc-price{color:var(--lime2)}
+.pc-exp{font-size:11px;color:var(--faint);margin-bottom:18px}
+.pc.pop .pc-exp{color:rgba(255,255,255,.3)}
+.pc-div{height:1px;margin-bottom:18px}
+.pc.std .pc-div{background:var(--bd)}.pc.pop .pc-div{background:rgba(255,255,255,.07)}
+.pc-feats{font-size:13px;line-height:2.2}
+.pc.std .pc-feats{color:var(--muted)}.pc.pop .pc-feats{color:rgba(255,255,255,.5)}
+.pc-feats li{list-style:none;display:flex;align-items:center;gap:8px}
+.pc-feats li::before{content:'';width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.pc.std .pc-feats li::before{background:var(--lime)}.pc.pop .pc-feats li::before{background:var(--lime2)}
+.pc-btn{display:block;margin-top:22px;padding:11px;border-radius:10px;font-size:13.5px;font-weight:700;text-align:center;transition:all .2s;font-family:'Cabinet Grotesk',sans-serif;cursor:pointer;border:none}
+.pc.std .pc-btn{background:var(--cream2);color:var(--navy);border:1.5px solid var(--bd)}
+.pc.std .pc-btn:hover{background:var(--lime);border-color:var(--lime);transform:translateY(-1px)}
+.pc.pop .pc-btn{background:var(--lime);color:var(--navy)}
+.pc.pop .pc-btn:hover{background:var(--lime3);transform:translateY(-2px);box-shadow:0 6px 24px rgba(141,198,63,.35)}
+.price-note{text-align:center;margin-top:24px;font-size:13px;color:var(--faint)}
+
+/* ─── INDUSTRIES ──────────────────────────────────────────── */
+.industries{background:var(--off)}
+.industries-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:52px}
+.industries-head h2{font-size:clamp(28px,3.5vw,46px);font-weight:900;letter-spacing:-.8px;color:var(--text);line-height:1.1}
+.industries-head h2 em{color:var(--limedark);font-style:italic}
+.industries-head p{font-size:15px;color:var(--muted);line-height:1.8;font-weight:300}
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ind{background:var(--cream);border:1.5px solid var(--bd);border-radius:14px;padding:20px;text-align:center;transition:all .22s;cursor:default}
+.ind:hover{border-color:var(--bdhov);background:var(--cream2);transform:translateY(-3px);box-shadow:var(--shadow)}
+.ind-icon{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,rgba(141,198,63,.1),rgba(141,198,63,.04));display:flex;align-items:center;justify-content:center;margin:0 auto 12px;transition:all .2s}
+.ind:hover .ind-icon{background:linear-gradient(135deg,var(--lime),var(--limedark));box-shadow:0 4px 14px rgba(107,165,40,.3)}
+.ind-icon svg{stroke:var(--limedark);fill:none;transition:stroke .2s;width:20px;height:20px}
+.ind:hover .ind-icon svg{stroke:var(--navy)}
+.ind-t{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.ind-d{font-size:11.5px;color:var(--faint);line-height:1.5}
+
+/* ─── PROCESS ─────────────────────────────────────────────── */
+.process{background:linear-gradient(135deg,var(--navy2),var(--navy3));overflow:hidden}
+.process-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.process-text h2{font-size:clamp(28px,3.5vw,46px);font-weight:900;color:#fff;letter-spacing:-.8px;line-height:1.1;margin-bottom:16px}
+.process-text h2 em{color:var(--lime);font-style:italic}
+.process-text p{font-size:15px;color:rgba(255,255,255,.45);line-height:1.8;font-weight:300;margin-bottom:28px}
+.process-steps{display:flex;flex-direction:column;gap:0}
+.ps{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.06);position:relative;transition:all .2s;cursor:default}
+.ps:last-child{border:none}
+.ps:hover .ps-circle{background:var(--lime);color:var(--navy);transform:scale(1.1)}
+.ps-circle{width:40px;height:40px;border-radius:50%;background:rgba(141,198,63,.1);border:1.5px solid rgba(141,198,63,.25);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:16px;font-weight:700;color:var(--lime2);flex-shrink:0;transition:all .25s}
+.ps-t{font-size:15px;font-weight:600;color:#fff;margin-bottom:4px}
+.ps-d{font-size:13px;color:rgba(255,255,255,.4);line-height:1.6;font-weight:300}
+
+/* score visual */
+.process-visual{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:28px}
+.pv-title{font-family:'Fraunces',serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:5px}
+.pv-sub{font-size:12px;color:rgba(255,255,255,.35);margin-bottom:22px}
+.score-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sr-label{font-size:12px;color:rgba(255,255,255,.45);width:140px;flex-shrink:0}
+.sr-bar{flex:1;height:5px;background:rgba(255,255,255,.06);border-radius:3px;overflow:hidden}
+.sr-fill{height:100%;border-radius:3px}
+.sr-val{font-size:12px;font-weight:600;width:30px;text-align:right;flex-shrink:0}
+.pv-quote{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px;margin-top:18px}
+.pvq-t{font-size:13px;color:rgba(255,255,255,.55);font-style:italic;line-height:1.65;margin-bottom:8px}
+.pvq-a{font-size:11px;font-weight:700;color:var(--lime)}
+
+/* ─── BRANDS ──────────────────────────────────────────────── */
+.brands{background:var(--cream);overflow:hidden}
+.brands-head{text-align:center;margin-bottom:52px}
+.brands-head h2{font-size:clamp(28px,3.5vw,46px);font-weight:900;letter-spacing:-.8px;color:var(--text)}
+.brands-head h2 em{color:var(--limedark);font-style:italic}
+.brands-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.brand-card{border-radius:22px;padding:40px;position:relative;overflow:hidden;transition:all .25s}
+.brand-card:hover{transform:translateY(-4px)}
+.bc-rk{background:var(--lime);border:1px solid rgba(255,255,255,.15)}
+.bc-tk{background:var(--navy3);border:1px solid rgba(141,198,63,.15)}
+.bc-rk:hover{box-shadow:0 16px 56px rgba(141,198,63,.35)}
+.bc-tk:hover{box-shadow:0 16px 56px rgba(0,0,0,.4)}
+.bc-label{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.bc-rk .bc-label{color:rgba(28,46,74,.5)}.bc-tk .bc-label{color:var(--lime)}
+.bc-logo{width:100%;max-width:260px;height:auto;margin-bottom:18px;border-radius:10px;display:block}
+.bc-rk .bc-logo{background:#fff;padding:10px 14px;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.bc-p{font-size:14px;line-height:1.82;font-weight:300;margin-bottom:24px}
+.bc-rk .bc-p{color:rgba(28,46,74,.7)}.bc-tk .bc-p{color:rgba(255,255,255,.5)}
+.bc-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:10px;font-size:14px;font-weight:700;transition:all .2s;font-family:'Cabinet Grotesk',sans-serif;cursor:pointer;border:none}
+.bc-rk .bc-btn{background:var(--navy);color:#fff}.bc-rk .bc-btn:hover{background:var(--navy2);transform:translateY(-1px)}
+.bc-tk .bc-btn{background:var(--lime);color:var(--navy)}.bc-tk .bc-btn:hover{background:var(--lime3);transform:translateY(-1px)}
+
+/* ─── CONTACT ─────────────────────────────────────────────── */
+.contact{background:var(--off)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-left h2{font-size:clamp(28px,3.5vw,46px);font-weight:900;letter-spacing:-.8px;color:var(--text);line-height:1.1;margin-bottom:14px}
+.contact-left h2 em{color:var(--limedark);font-style:italic}
+.contact-left p{font-size:15px;color:var(--muted);line-height:1.82;font-weight:300;margin-bottom:26px}
+.c-links{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.c-link{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted);padding:12px 16px;background:var(--cream);border:1.5px solid var(--bd);border-radius:12px;transition:all .18s}
+.c-link:hover{border-color:var(--bdhov);color:var(--navy);background:var(--cream2);transform:translateX(4px)}
+.c-link svg{width:18px;height:18px;stroke:var(--faint);fill:none;flex-shrink:0;transition:stroke .15s}
+.c-link:hover svg{stroke:var(--limedark)}
+.wa-blk{background:linear-gradient(135deg,rgba(37,211,102,.07),rgba(37,211,102,.03));border:1.5px solid rgba(37,211,102,.18);border-radius:14px;padding:20px;display:flex;align-items:center;gap:14px}
+.wa-blk svg.wa-big{width:38px;height:38px;fill:#25D366;flex-shrink:0}
+.wa-blk-t{font-size:14.5px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.wa-blk-d{font-size:12px;color:var(--faint)}
+.wa-blk a{margin-left:auto;background:#25D366;color:#fff;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:700;white-space:nowrap;transition:all .2s;font-family:'Cabinet Grotesk',sans-serif}
+.wa-blk a:hover{background:#20C25E;transform:translateY(-1px)}
+/* form */
+.form-box{background:var(--cream);border:1.5px solid var(--bd);border-radius:22px;padding:34px;box-shadow:var(--shadow)}
+.form-box h3{font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--text);margin-bottom:5px}
+.form-box p{font-size:13px;color:var(--faint);margin-bottom:24px}
+.fl{font-size:11px;font-weight:700;color:var(--muted);display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:.07em}
+.fi{width:100%;background:var(--off);border:1.5px solid var(--bd);border-radius:10px;padding:12px 14px;color:var(--text);font-size:14px;font-family:'Cabinet Grotesk',sans-serif;outline:none;transition:all .18s;margin-bottom:14px}
+.fi:focus{border-color:var(--lime);box-shadow:0 0 0 3px rgba(141,198,63,.1)}
+select.fi{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%235A6E7F' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:34px}
+textarea.fi{resize:vertical;min-height:86px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sbtn{width:100%;background:var(--lime);color:var(--navy);border:none;border-radius:11px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Cabinet Grotesk',sans-serif;transition:all .22s}
+.sbtn:hover{background:var(--lime3);transform:translateY(-2px);box-shadow:0 8px 28px rgba(141,198,63,.32)}
+.fnote{font-size:11.5px;color:var(--faint);text-align:center;margin-top:10px}
+.form-done{display:none;text-align:center;padding:24px 0}
+.form-done h4{font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--limedark);margin-bottom:8px}
+.form-done p{font-size:14px;color:var(--muted);line-height:1.7}
+
+/* ─── SOCIAL ──────────────────────────────────────────────── */
+.social{background:var(--cream)}
+.soc-head{text-align:center;margin-bottom:44px}
+.soc-head h2{font-size:clamp(26px,3.5vw,42px);font-weight:900;letter-spacing:-.8px;color:var(--text)}
+.soc-head h2 em{color:var(--limedark);font-style:italic}
+.soc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.sc{border:1.5px solid var(--bd);border-radius:16px;padding:22px;text-align:center;background:var(--off);transition:all .22s;display:block}
+.sc:hover{transform:translateY(-4px);box-shadow:var(--shadowlg)}
+.sc-li:hover{border-color:#0A66C2;background:#EEF3FB}.sc-fb:hover{border-color:#1877F2;background:#EEF4FF}.sc-ig:hover{border-color:#E4405F;background:#FFF0F3}.sc-tw:hover{border-color:#000;background:#F7F7F7}
+.sc-icon{display:flex;justify-content:center;margin-bottom:12px}
+.sc-icon svg{width:28px;height:28px;fill:var(--faint);transition:fill .2s}
+.sc-li:hover .sc-icon svg{fill:#0A66C2}.sc-fb:hover .sc-icon svg{fill:#1877F2}.sc-ig:hover .sc-icon svg{fill:#E4405F}.sc-tw:hover .sc-icon svg{fill:#000}
+.sc-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.sc-handle{font-size:12px;color:var(--faint)}
+.sc-cta{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;color:var(--limedark);text-transform:uppercase;letter-spacing:.07em}
+
+/* ─── FOOTER ──────────────────────────────────────────────── */
+footer{background:var(--navy3);padding:60px 0 28px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.f-logo img{height:46px;width:auto;border-radius:7px;margin-bottom:12px}
+.f-tag{font-size:11px;font-style:italic;color:rgba(255,255,255,.28);margin-bottom:14px}
+.f-p{font-size:13px;color:rgba(255,255,255,.38);line-height:1.78;font-weight:300;margin-bottom:18px}
+.f-soc{display:flex;gap:8px}
+.f-si{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;transition:all .2s}
+.f-si:hover{background:var(--lime);border-color:var(--lime)}
+.f-si svg{width:15px;height:15px;fill:rgba(255,255,255,.4);transition:fill .2s}.f-si:hover svg{fill:var(--navy)}
+.f-col-t{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.25);font-weight:700;margin-bottom:14px}
+.f-link{display:block;font-size:13px;color:rgba(255,255,255,.38);padding:3px 0;transition:color .15s}
+.f-link:hover{color:var(--lime2)}
+.footer-btm{padding-top:24px;border-top:1px solid rgba(255,255,255,.05);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.22);flex-wrap:wrap;gap:10px}
+.fbr a{color:rgba(255,255,255,.22);margin-left:20px;transition:color .15s}.fbr a:hover{color:var(--lime2)}
+
+/* ─── WA FLOAT ────────────────────────────────────────────── */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:150;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.45);transition:all .25s}
+.wa-float:hover{transform:scale(1.12) translateY(-2px);box-shadow:0 8px 32px rgba(37,211,102,.55)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+.wa-tip{position:absolute;right:64px;background:var(--navy);color:#fff;font-size:12px;font-family:'Cabinet Grotesk',sans-serif;padding:7px 13px;border-radius:8px;white-space:nowrap;opacity:0;transform:translateX(6px);transition:all .2s;pointer-events:none}
+.wa-float:hover .wa-tip{opacity:1;transform:translateX(0)}
+
+/* ─── SCROLL REVEAL ────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:translateY(0)}
+.rv-l{opacity:0;transform:translateX(-28px);transition:opacity .6s ease,transform .6s ease}
+.rv-l.on{opacity:1;transform:translateX(0)}
+.rv-r{opacity:0;transform:translateX(28px);transition:opacity .6s ease,transform .6s ease}
+.rv-r.on{opacity:1;transform:translateX(0)}
+
+/* ─── RESPONSIVE ───────────────────────────────────────────── */
+@media(max-width:1040px){
+  .hero-inner{grid-template-columns:1fr;gap:48px}
+  .hero-cards{height:380px}
+  .hc-main{width:280px}
+  .about-inner,.process-inner,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .brands-grid{grid-template-columns:1fr}
+  .svcs-grid{grid-template-columns:1fr 1fr}
+  .price-grid{grid-template-columns:1fr 1fr}
+  .ind-grid{grid-template-columns:repeat(2,1fr)}
+  .soc-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-ctas{display:none}
+  .ham{display:flex}
+  .industries-head{grid-template-columns:1fr;gap:14px}
+}
+@media(max-width:640px){
+  .svcs-grid,.price-grid,.ind-grid,.soc-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .frow{grid-template-columns:1fr}
+  .hero-trust{flex-wrap:wrap;gap:16px}.trust-div{display:none}
+  .hc-score,.hc-ats{display:none}
+  .about-stats{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor cursor-dot" id="cdot"></div>
+<div class="cursor cursor-ring" id="cring"></div>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/2348081688328?text=Hi%20R%C3%A9sum%C3%A9Klinik%2C%20I%20would%20like%20to%20enquire%20about%20your%20CV%20services." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <div class="wa-tip">Chat on WhatsApp</div>
+</a>
+
+<!-- MOB NAV -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" onclick="closeMob()">&times;</button>
+  <a href="#about" class="mob-link" onclick="closeMob()">About</a>
+  <a href="#services" class="mob-link" onclick="closeMob()">Services</a>
+  <a href="#pricing" class="mob-link" onclick="closeMob()">Pricing</a>
+  <a href="#founder" class="mob-link" onclick="closeMob()">Our Story</a>
+  <a href="#contact" class="mob-link" onclick="closeMob()">Contact</a>
+  <a href="https://wa.me/2348081688328" target="_blank" class="mob-link" style="color:#25D366">WhatsApp</a>
+  <a href="#contact" class="mob-link" style="color:var(--lime2)" onclick="closeMob()">Get Your CV</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="RK_PLACEHOLDER" alt="RésuméKlinik">
+    </a>
+    <div class="nav-links">
+      <a href="#about" class="nl">About</a>
+      <a href="#services" class="nl">Services</a>
+      <a href="#pricing" class="nl">Pricing</a>
+      <a href="#founder" class="nl">Our Story</a>
+      <a href="#contact" class="nl">Contact</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="https://wa.me/2348081688328?text=Hi%20R%C3%A9sum%C3%A9Klinik%2C%20I%20want%20to%20enquire%20about%20your%20services." target="_blank" class="n-wa">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="#contact" class="n-cta">Get Your CV &rarr;</a>
+    </div>
+    <div class="ham" onclick="openMob()" id="ham"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-mesh">
+    <div class="mesh-blob mb1"></div>
+    <div class="mesh-blob mb2"></div>
+    <div class="mesh-blob mb3"></div>
+  </div>
+  <div class="hero-grid"></div>
+  <div class="hero-ticker-line"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div>
+        <div class="hero-tag"><span class="hero-tag-dot"></span><p>Nigeria's #1 Career Intelligence Clinic</p></div>
+        <h1 class="hero-h">Your Career,<br><em>Diagnosed.</em><span class="line2">Transformed.</span></h1>
+        <p class="hero-sub">Premium CV writing, LinkedIn optimisation, and career strategy built for ambitious professionals across Africa. ATS-engineered. Expert-delivered. Results guaranteed.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-g">Start My Transformation &rarr;</a>
+          <a href="https://wa.me/2348081688328?text=Hi%20R%C3%A9sum%C3%A9Klinik%2C%20I%20want%20to%20enquire%20about%20your%20CV%20services." target="_blank" class="btn btn-wa">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat Now
+          </a>
+          <a href="#services" class="btn btn-o">Explore Services</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-stat"><div class="trust-n">500+</div><div class="trust-l">CVs Transformed</div></div>
+          <div class="trust-div"></div>
+          <div class="trust-stat"><div class="trust-n">Big 4</div><div class="trust-l">Placements</div></div>
+          <div class="trust-div"></div>
+          <div class="trust-stat"><div class="trust-n">98%</div><div class="trust-l">Satisfaction</div></div>
+          <div class="trust-div"></div>
+          <div class="trust-stat"><div class="trust-n">Lagos</div><div class="trust-l">Nigeria &amp; Africa</div></div>
+        </div>
+      </div>
+      <!-- RIGHT: cards -->
+      <div class="hero-cards">
+        <!-- main services card -->
+        <div class="hc hc-main">
+          <div class="hc-main-top">
+            <img src="RK_PLACEHOLDER" alt="RésuméKlinik" class="hc-logo">
+            <div><div style="font-size:12px;font-weight:600;color:rgba(255,255,255,.7)">RésuméKlinik</div><div class="hc-label">...empowering careers</div></div>
+          </div>
+          <div class="hc-row"><div class="hc-dot"></div><div class="hc-txt">ATS-Optimised CV Writing</div><div class="hc-tag">HOT</div></div>
+          <div class="hc-row"><div class="hc-dot"></div><div class="hc-txt">Executive Career Branding</div><div class="hc-tag">TOP</div></div>
+          <div class="hc-row"><div class="hc-dot"></div><div class="hc-txt">LinkedIn Optimisation</div></div>
+          <div class="hc-row"><div class="hc-dot"></div><div class="hc-txt">Japa-Ready International CV</div><div class="hc-tag">NEW</div></div>
+          <div class="hc-row"><div class="hc-dot"></div><div class="hc-txt">Cover Letter Writing</div></div>
+          <div class="hc-foot"><a href="#contact">Begin Your Journey &rarr;</a></div>
+        </div>
+        <!-- score mini card -->
+        <div class="hc hc-score">
+          <div class="hcs-label">CV Score</div>
+          <div class="hcs-num">78</div>
+          <div class="hcs-sub">Before RésuméKlinik</div>
+          <div class="hcs-bar"><div class="hcs-fill"></div></div>
+        </div>
+        <!-- ATS mini card -->
+        <div class="hc hc-ats">
+          <div class="ats-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="ats-t">ATS Passed</div>
+          <div class="ats-s">97% compatibility</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track" id="ticker">
+    <span class="ticker-item">ATS-Optimised CVs<span class="ticker-sep"></span></span>
+    <span class="ticker-item">LinkedIn Optimisation<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Big 4 Placements<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Executive Branding<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Japa-Ready Suites<span class="ticker-sep"></span></span>
+    <span class="ticker-item">C-Suite Transformation<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Career Intelligence<span class="ticker-sep"></span></span>
+    <span class="ticker-item">500+ CVs Delivered<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Lagos &bull; Nigeria &bull; Africa<span class="ticker-sep"></span></span>
+    <!-- duplicate for infinite -->
+    <span class="ticker-item">ATS-Optimised CVs<span class="ticker-sep"></span></span>
+    <span class="ticker-item">LinkedIn Optimisation<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Big 4 Placements<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Executive Branding<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Japa-Ready Suites<span class="ticker-sep"></span></span>
+    <span class="ticker-item">C-Suite Transformation<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Career Intelligence<span class="ticker-sep"></span></span>
+    <span class="ticker-item">500+ CVs Delivered<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Lagos &bull; Nigeria &bull; Africa<span class="ticker-sep"></span></span>
+  </div>
+</div>
+
+<!-- ABOUT / FOUNDER -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-inner">
+      <div class="about-visual rv-l">
+        <div class="about-img-wrap">
+          <img src="FOUNDER_PLACEHOLDER" alt="Olusesi Mayowa Bastu — Founder, RésuméKlinik">
+          <div class="about-img-overlay"></div>
+          <div class="about-img-badge">
+            <div class="aib-name">Olusesi Mayowa Bastu</div>
+            <div class="aib-role">Founder &amp; Lead Career Strategist</div>
+            <a href="https://www.linkedin.com/in/olusesimayowabastu/" target="_blank" class="aib-li">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="about-floater">
+          <div class="af-n">10+</div>
+          <div class="af-l">Years Experience</div>
+        </div>
+      </div>
+      <div class="about-text rv-r">
+        <div class="eyebrow" style="margin-bottom:10px">Meet the Founder</div>
+        <h2>A Practitioner Who<br><em>Knows the Terrain</em></h2>
+        <p class="lead">Olusesi Mayowa Bastu is a management consultant, career strategist, and entrepreneur with over a decade of cross-sector professional experience spanning financial services, advisory consulting, operations, HR, and business development across some of Nigeria's most rigorous and competitive environments.</p>
+        <p class="lead">Having built his career at the intersection of strategy, talent management, and organisational performance, Mayowa brings a dual perspective that most career advisors simply do not have — that of a seasoned practitioner who has sat on both sides of the hiring table.</p>
+        <div class="blockquote">"I started RésuméKlinik because I watched brilliant, qualified professionals get passed over — not because they lacked ability, but because their CV didn't tell their story powerfully enough."</div>
+        <p class="lead">Today, that clinical insight — of what recruiters actually look for, of how hiring decisions are really made at top-tier Nigerian organisations — is the foundation of every CV, LinkedIn profile, and career narrative that RésuméKlinik produces.</p>
+        <div class="about-stats">
+          <div class="as rv"><div class="as-n">500+</div><div class="as-l">CVs Delivered</div></div>
+          <div class="as rv" style="transition-delay:.1s"><div class="as-n">Big 4</div><div class="as-l">Placements</div></div>
+          <div class="as rv" style="transition-delay:.2s"><div class="as-n">98%</div><div class="as-l">Satisfaction</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="services-head rv">
+      <div class="eyebrow eyebrow-w" style="margin-bottom:12px">What We Offer</div>
+      <h2>Services That<br><em>Win Interviews</em></h2>
+      <p>Every service is tailored to your industry, seniority, and target employer. No templates. No copy-paste. Precision career strategy.</p>
+    </div>
+    <div class="svcs-grid">
+      <div class="svc rv">
+        <div class="svc-num">01</div>
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <div class="svc-t">ATS-Optimised CV Writing</div>
+        <div class="svc-d">Reverse-chronological, achievement-driven CVs with quantified bullets per role. Engineered to pass every ATS and impress every recruiter on first view.</div>
+        <span class="svc-cta">Enquire Now &rarr;</span>
+      </div>
+      <div class="svc featured rv" style="transition-delay:.08s">
+        <div class="svc-num">02</div>
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="svc-t">Executive Career Branding</div>
+        <div class="svc-d">Full personal brand transformation — executive summary, LinkedIn profile, CV, and cover letters. For senior professionals targeting Big 4, MNCs, and C-suite roles.</div>
+        <span class="svc-cta">Most Popular &rarr;</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.16s">
+        <div class="svc-num">03</div>
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+        <div class="svc-t">LinkedIn Profile Optimisation</div>
+        <div class="svc-d">Keyword-rich headline, magnetic About section, impact-driven experience bullets. Get found by the right recruiters 17&times; more often.</div>
+        <span class="svc-cta">Enquire Now &rarr;</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.06s">
+        <div class="svc-num">04</div>
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div class="svc-t">Cover Letter Writing</div>
+        <div class="svc-d">Compelling, company-specific cover letters that give you a clear narrative advantage. Written for the exact role, tone, and culture of your target employer.</div>
+        <span class="svc-cta">Add-On Service &rarr;</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.12s">
+        <div class="svc-num">05</div>
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+        <div class="svc-t">Japa-Ready International CV</div>
+        <div class="svc-d">International CV formatted for UK, Canada, Australia, and US markets — plus a matching LinkedIn profile and cover letter tuned for global hiring managers.</div>
+        <span class="svc-cta">Best Value &rarr;</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.18s">
+        <div class="svc-num">06</div>
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="svc-t">C-Suite Transformation</div>
+        <div class="svc-d">Full personal brand: CV, LinkedIn, executive bio, professional summary, and cover letters. Unlimited revisions for director and C-suite professionals.</div>
+        <span class="svc-cta">Executive Tier &rarr;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="pricing-head rv">
+      <div class="eyebrow" style="margin-bottom:12px">Transparent Pricing</div>
+      <h2>Pick Your <em>Package</em></h2>
+      <p>Final price within each range confirmed via WhatsApp consultation based on your specific needs and seniority.</p>
+    </div>
+    <div class="price-grid">
+      <div class="pc std rv">
+        <div class="pc-tier">Entry Tier</div>
+        <div class="pc-name">CV Diagnosis</div>
+        <div class="pc-price">&#x20A6;5k &ndash; &#x20A6;8k</div>
+        <div class="pc-exp">0&ndash;3 years experience</div>
+        <div class="pc-div"></div>
+        <ul class="pc-feats">
+          <li>ATS-optimised CV rewrite</li>
+          <li>1 revision round</li>
+          <li>Delivery in 2&ndash;3 days</li>
+        </ul>
+        <button class="pc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+      <div class="pc std rv" style="transition-delay:.08s">
+        <div class="pc-tier">Core Tier</div>
+        <div class="pc-name">Career Bundle</div>
+        <div class="pc-price">&#x20A6;18k &ndash; &#x20A6;25k</div>
+        <div class="pc-exp">3&ndash;7 years experience</div>
+        <div class="pc-div"></div>
+        <ul class="pc-feats">
+          <li>ATS CV + Cover Letter</li>
+          <li>LinkedIn optimisation</li>
+          <li>2 revision rounds</li>
+        </ul>
+        <button class="pc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+      <div class="pc pop rv" style="transition-delay:.16s">
+        <div class="pc-crown">MOST POPULAR</div>
+        <div class="pc-tier">Premium Tier</div>
+        <div class="pc-name">Japa-Ready Suite</div>
+        <div class="pc-price">&#x20A6;35k &ndash; &#x20A6;50k</div>
+        <div class="pc-exp">5&ndash;12 years experience</div>
+        <div class="pc-div"></div>
+        <ul class="pc-feats">
+          <li>International CV (UK/CA/AU)</li>
+          <li>LinkedIn + Cover Letter</li>
+          <li>Career Assessment</li>
+          <li>3 revision rounds</li>
+        </ul>
+        <button class="pc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+      <div class="pc std rv" style="transition-delay:.24s">
+        <div class="pc-tier">Executive Tier</div>
+        <div class="pc-name">C-Suite Transformation</div>
+        <div class="pc-price">&#x20A6;75k &ndash; &#x20A6;120k</div>
+        <div class="pc-exp">10+ years experience</div>
+        <div class="pc-div"></div>
+        <ul class="pc-feats">
+          <li>CV + LinkedIn + Bio</li>
+          <li>Executive Summary</li>
+          <li>Cover Letters</li>
+          <li>Unlimited revisions</li>
+        </ul>
+        <button class="pc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+    </div>
+    <p class="price-note rv">All prices in Nigerian Naira &bull; Paystack accepted (cards, bank transfer, USSD) &bull; Final price confirmed via WhatsApp</p>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries" id="industries">
+  <div class="wrap">
+    <div class="industries-head">
+      <div class="rv-l">
+        <div class="eyebrow" style="margin-bottom:10px">Our Clientele</div>
+        <h2>Industries We <em>Serve</em></h2>
+      </div>
+      <div class="rv-r"><p>Specialised expertise and industry-specific language across Nigeria's most competitive professional sectors. We speak your industry's language fluently.</p></div>
+    </div>
+    <div class="ind-grid">
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></div><div class="ind-t">Banking &amp; Finance</div><div class="ind-d">Commercial, investment &amp; retail</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div class="ind-t">Audit &amp; Risk</div><div class="ind-d">Big 4, internal audit, compliance</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="ind-t">Human Resources</div><div class="ind-d">HRBPs, talent acquisition, L&amp;D</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="ind-t">Sales &amp; BD</div><div class="ind-d">Commercial, B2B, partnerships</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="ind-t">Real Estate</div><div class="ind-d">Property development, facilities</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M22 12h-2M19.07 19.07l-1.41-1.41M12 22v-2M4.93 19.07l1.41-1.41M2 12h2M4.93 4.93l1.41 1.41"/></svg></div><div class="ind-t">Operations</div><div class="ind-d">Supply chain, logistics, ops</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="ind-t">Technology</div><div class="ind-d">PMs, engineers, tech leads</div></div>
+      <div class="ind rv"><div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div><div class="ind-t">Consulting</div><div class="ind-d">Strategy, advisory, management</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="process-inner">
+      <div class="process-text rv-l">
+        <div class="eyebrow eyebrow-w" style="margin-bottom:12px">How It Works</div>
+        <h2>5 Steps to Your<br><em>Dream Career</em></h2>
+        <p>A structured, proven process that transforms your career documents and positions you powerfully in the Nigerian and global job market.</p>
+        <div class="process-steps">
+          <div class="ps"><div class="ps-circle">1</div><div><div class="ps-t">Share Your Profile</div><div class="ps-d">Fill our intake form with your experience, target roles, and goals.</div></div></div>
+          <div class="ps"><div class="ps-circle">2</div><div><div class="ps-t">Diagnosis &amp; Strategy</div><div class="ps-d">We analyse your career profile and identify your exact positioning gaps.</div></div></div>
+          <div class="ps"><div class="ps-circle">3</div><div><div class="ps-t">Expert Writing</div><div class="ps-d">Your career strategist crafts your tailored, ATS-proof documents.</div></div></div>
+          <div class="ps"><div class="ps-circle">4</div><div><div class="ps-t">Review &amp; Refine</div><div class="ps-d">Two rounds of revisions until you are fully satisfied.</div></div></div>
+          <div class="ps"><div class="ps-circle">5</div><div><div class="ps-t">Land Your Interviews</div><div class="ps-d">Deploy your new brand and start receiving the calls you deserve.</div></div></div>
+        </div>
+      </div>
+      <div class="rv-r">
+        <div class="process-visual">
+          <div class="pv-title">CV Health Dashboard</div>
+          <div class="pv-sub">Before &rarr; after transformation</div>
+          <div class="score-row"><div class="sr-label">ATS Compatibility</div><div class="sr-bar"><div class="sr-fill" style="width:88%;background:var(--lime)"></div></div><div class="sr-val" style="color:var(--lime)">88</div></div>
+          <div class="score-row"><div class="sr-label">Impact Language</div><div class="sr-bar"><div class="sr-fill" style="width:62%;background:#F59E0B"></div></div><div class="sr-val" style="color:#F59E0B">62</div></div>
+          <div class="score-row"><div class="sr-label">Keyword Match</div><div class="sr-bar"><div class="sr-fill" style="width:75%;background:#0D9488"></div></div><div class="sr-val" style="color:#0D9488">75</div></div>
+          <div class="score-row"><div class="sr-label">Format &amp; Structure</div><div class="sr-bar"><div class="sr-fill" style="width:90%;background:#A78BFA"></div></div><div class="sr-val" style="color:#A78BFA">90</div></div>
+          <div class="score-row"><div class="sr-label">Completeness</div><div class="sr-bar"><div class="sr-fill" style="width:71%;background:#F87171"></div></div><div class="sr-val" style="color:#F87171">71</div></div>
+          <div class="pv-quote">
+            <div class="pvq-t">"Got 3 interview calls within a week of sending my new CV. RésuméKlinik transformed my entire professional narrative."</div>
+            <div class="pvq-a">Finance Professional, Lagos &mdash; Big 4 Placement</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands" id="brands">
+  <div class="wrap">
+    <div class="brands-head rv">
+      <div class="eyebrow" style="margin-bottom:12px">Our Ecosystem</div>
+      <h2>Two Brands. <em>One Mission.</em></h2>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card bc-rk rv-l">
+        <div class="bc-label">Flagship Brand &bull; Since 2020</div>
+        <img src="RK_PLACEHOLDER" alt="RésuméKlinik" class="bc-logo">
+        <p class="bc-p">Nigeria's premium career documents and personal branding clinic. ATS-optimised CVs, LinkedIn optimisation, and executive career branding for mid-to-senior professionals.</p>
+        <button class="bc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Your CV Done &rarr;</button>
+      </div>
+      <div class="brand-card bc-tk rv-r">
+        <div class="bc-label">Platform &bull; Launched 2025</div>
+        <img src="TK_PLACEHOLDER" alt="Talents Klinik" class="bc-logo" style="background:none;padding:0;max-width:280px">
+        <p class="bc-p">The full-spectrum AI career intelligence platform. From personality assessment and skill gap training to verified certification and direct employer connections.</p>
+        <a href="talentsklinik.html" class="bc-btn" style="display:inline-flex;align-items:center;gap:8px">Explore Platform &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rv-l">
+        <div class="eyebrow" style="margin-bottom:10px">Get In Touch</div>
+        <h2>Start Your<br><em>Transformation</em></h2>
+        <p>Ready to get your career diagnosed and prescribed a winning strategy? Reach out via any channel or fill the enquiry form.</p>
+        <div class="c-links">
+          <a href="https://bit.ly/CVKlinik" target="_blank" class="c-link">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Submit your CV via our online form &mdash; bit.ly/CVKlinik</span>
+          </a>
+          <a href="mailto:resumeklinik@gmail.com" class="c-link">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>resumeklinik@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/company/resumeklinik" target="_blank" class="c-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="stroke:none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn &mdash; RésuméKlinik</span>
+          </a>
+        </div>
+        <div class="wa-blk">
+          <svg class="wa-big" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <div><div class="wa-blk-t">Fastest Response via WhatsApp</div><div class="wa-blk-d">We typically reply within 2 hours</div></div>
+          <a href="https://wa.me/2348081688328?text=Hi%20R%C3%A9sum%C3%A9Klinik%2C%20I%20would%20like%20to%20enquire%20about%20your%20CV%20services." target="_blank">Chat Now</a>
+        </div>
+      </div>
+      <div class="rv-r">
+        <div class="form-box">
+          <h3>Send an Enquiry</h3>
+          <p>We respond within 24 hours via email or WhatsApp.</p>
+          <form id="eq-form" name="resumeklinik-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="resumeklinik-enquiry">
+            <p style="display:none"><input name="bot-field"></p>
+            <div class="frow">
+              <div><label class="fl">Full Name</label><input class="fi" type="text" name="name" placeholder="Your full name" required></div>
+              <div><label class="fl">WhatsApp</label><input class="fi" type="tel" name="phone" placeholder="+234 800 000 0000" required></div>
+            </div>
+            <label class="fl">Email Address</label>
+            <input class="fi" type="email" name="email" placeholder="you@email.com" required>
+            <label class="fl">Service Needed</label>
+            <select class="fi" name="service" required>
+              <option value="">Select a service</option>
+              <option>CV Writing &sol; Rewrite</option>
+              <option>LinkedIn Profile Optimisation</option>
+              <option>Executive Career Branding Suite</option>
+              <option>Japa-Ready International CV</option>
+              <option>Cover Letter Writing</option>
+              <option>C-Suite Transformation Package</option>
+              <option>Other</option>
+            </select>
+            <label class="fl">Your Industry</label>
+            <select class="fi" name="industry">
+              <option value="">Select your industry</option>
+              <option>Banking &amp; Finance</option>
+              <option>FinTech</option>
+              <option>Audit &amp; Risk / Big 4</option>
+              <option>Human Resources</option>
+              <option>Sales &amp; Business Development</option>
+              <option>Real Estate</option>
+              <option>Technology</option>
+              <option>Consulting</option>
+              <option>Oil &amp; Gas</option>
+              <option>FMCG</option>
+              <option>Other</option>
+            </select>
+            <label class="fl">Your Goals</label>
+            <textarea class="fi" name="message" placeholder="Current role, target role, and what you need help with..."></textarea>
+            <button type="submit" class="sbtn">Send Enquiry &rarr;</button>
+            <div class="fnote">Your information is private and never shared.</div>
+          </form>
+          <div class="form-done" id="form-done">
+            <h4>Enquiry Received!</h4>
+            <p>Thank you! We will be in touch within 24 hours via email or WhatsApp. Connect with us on <a href="https://linkedin.com/company/resumeklinik" target="_blank" style="color:var(--limedark)">LinkedIn</a> for daily career tips.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="social" id="social">
+  <div class="wrap">
+    <div class="soc-head rv">
+      <div class="eyebrow" style="margin-bottom:10px">Follow Us</div>
+      <h2>Join Our <em>Community</em></h2>
+    </div>
+    <div class="soc-grid">
+      <a href="https://linkedin.com/company/resumeklinik" target="_blank" class="sc sc-li rv">
+        <div class="sc-icon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+        <div class="sc-name">LinkedIn</div><div class="sc-handle">@RésuméKlinik</div>
+        <span class="sc-cta">Follow &rarr;</span>
+      </a>
+      <a href="https://facebook.com/resumeklinik" target="_blank" class="sc sc-fb rv">
+        <div class="sc-icon"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
+        <div class="sc-name">Facebook</div><div class="sc-handle">RésuméKlinik</div>
+        <span class="sc-cta">Like &rarr;</span>
+      </a>
+      <a href="https://instagram.com/resumeklinik" target="_blank" class="sc sc-ig rv">
+        <div class="sc-icon"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
+        <div class="sc-name">Instagram</div><div class="sc-handle">@resumeklinik</div>
+        <span class="sc-cta">Follow &rarr;</span>
+      </a>
+      <a href="https://x.com/resumeklinik" target="_blank" class="sc sc-tw rv">
+        <div class="sc-icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+        <div class="sc-name">X (Twitter)</div><div class="sc-handle">@resumeklinik</div>
+        <span class="sc-cta">Follow &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-logo"><img src="RK_PLACEHOLDER" alt="RésuméKlinik"></div>
+        <div class="f-tag">...empowering careers, connecting opportunities.</div>
+        <div class="f-p">Nigeria's premier career intelligence clinic. Transforming raw experience into powerful, executive-level narratives that land interviews at Big 4 firms, MNCs, and Nigeria's top employers.</div>
+        <div class="f-soc">
+          <a href="https://linkedin.com/company/resumeklinik" target="_blank" class="f-si"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://facebook.com/resumeklinik" target="_blank" class="f-si"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/resumeklinik" target="_blank" class="f-si"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://x.com/resumeklinik" target="_blank" class="f-si"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://wa.me/2348081688328" target="_blank" class="f-si"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-t">Services</div>
+        <a href="#services" class="f-link">CV Writing &amp; Rewrite</a>
+        <a href="#services" class="f-link">LinkedIn Optimisation</a>
+        <a href="#services" class="f-link">Executive Branding</a>
+        <a href="#services" class="f-link">Japa-Ready Suite</a>
+        <a href="#services" class="f-link">C-Suite Transformation</a>
+      </div>
+      <div>
+        <div class="f-col-t">Company</div>
+        <a href="#about" class="f-link">About &amp; Founder</a>
+        <a href="#industries" class="f-link">Industries We Serve</a>
+        <a href="#process" class="f-link">How It Works</a>
+        <a href="#pricing" class="f-link">Pricing</a>
+        <a href="talentsklinik.html" class="f-link">Talents Klinik</a>
+      </div>
+      <div>
+        <div class="f-col-t">Contact</div>
+        <a href="https://bit.ly/CVKlinik" target="_blank" class="f-link">Submit CV Form</a>
+        <a href="mailto:resumeklinik@gmail.com" class="f-link">Email Us</a>
+        <a href="https://wa.me/2348081688328" target="_blank" class="f-link">WhatsApp</a>
+        <div class="f-col-t" style="margin-top:20px">Location</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.35);line-height:1.8">Lagos, Nigeria<br>Serving all of Africa<br>and the Diaspora</div>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <div>&copy; 2025 R&eacute;sum&eacute;Klinik. All rights reserved. Lagos, Nigeria.</div>
+      <div class="fbr"><a href="#">Privacy</a><a href="#">Terms</a><a href="#contact" style="color:var(--lime2)">Get Your CV &rarr;</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── CUSTOM CURSOR ──────────────────────────────────────────
+const dot = document.getElementById('cdot');
+const ring = document.getElementById('cring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
+(function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); })();
+document.querySelectorAll('a,button,.svc,.ind,.pc,.as,.hc').forEach(el => {
+  el.addEventListener('mouseenter', () => ring.classList.add('hov'));
+  el.addEventListener('mouseleave', () => ring.classList.remove('hov'));
+});
+
+// ── NAV SCROLL ─────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── MOBILE MENU ────────────────────────────────────────────
+function openMob() { document.getElementById('mobNav').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeMob() { document.getElementById('mobNav').classList.remove('open'); document.body.style.overflow = ''; }
+
+// ── SCROLL REVEAL ──────────────────────────────────────────
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.rv,.rv-l,.rv-r').forEach((el, i) => {
+  el.style.transitionDelay = (i % 4) * 80 + 'ms';
+  ro.observe(el);
+});
+
+// ── FORM ───────────────────────────────────────────────────
+document.getElementById('eq-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const d = new FormData(this);
+  const n = d.get('name') || '';
+  const ph = d.get('phone') || '';
+  const sv = d.get('service') || '';
+  const ind = d.get('industry') || '';
+  const msg = d.get('message') || '';
+  const wa = encodeURIComponent('New enquiry from resumeklinik.com:\n\nName: ' + n + '\nPhone: ' + ph + '\nService: ' + sv + '\nIndustry: ' + ind + '\nMessage: ' + msg);
+  fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(d).toString() })
+    .catch(() => {})
+    .finally(() => {
+      this.style.display = 'none';
+      document.getElementById('form-done').style.display = 'block';
+      setTimeout(() => { try { window.open('https://wa.me/2348081688328?text=' + wa, '_blank'); } catch(e) {} }, 500);
+    });
+});
+</script>
+</body>
+</html>
